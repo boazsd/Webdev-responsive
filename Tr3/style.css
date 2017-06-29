@@ -1,16 +1,39 @@
-body {
-    font-family: arial;
-    font-size: 5px;
+#demoimg {
+    display: none;
+    height: 300px;
+    width: 300px;
+}
+
+@media screen and (orientation: landscape) and (min-width: 300px) {
+    #demoimg{
+        display: block;
+        }
+}
+
+img {
+    height: 100%;
 }
 
 #text1 {
-    font-size: 2em;
+    display: none;
 }
 
-#text2 {
-    font-size: 4em;
+@media screen and (device-aspect-ratio: 4/3) {
+    #text1{
+        display: block;
+        }
 }
 
-#text3 {
-    font-size: 6em;
+img {
+    height: 100%;
+}
+
+#demovid{
+    display: block;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-resolution: 90dpi) { 
+    #demovid{
+        display: block;
+        }
 }
